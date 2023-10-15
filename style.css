@@ -13,11 +13,30 @@ li{
         
 }
 
+.menu1>ul+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+ul>a{
+    text-decoration: none;
+}
+
+ul>li>a{text-decoration: none;
+}
+
+
+li > a{
+    text-decoration: none
+}
+
+
 body{
-background-color: grey;
+
+border-radius: 30px;
 width: 100vw;
 height: 100vh;
-
 display: flex;
 flex-direction: column;
 }
@@ -26,11 +45,16 @@ flex-direction: column;
 .header{
     display: flex;
     font-size: 12px;
-    background-color: aqua;
+    background-color: #DECCb4;
+    border-bottom: 5px solid rgb(240, 79, 68);
+    border-radius: 20px;
     justify-content: center;
     margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
     text-align: center;
     align-items: center;
+    flex-grow: 1;
       
 }
 
@@ -46,24 +70,86 @@ flex-direction: column;
 .menu{
     margin-left: 10px;
     margin-right: 10px;
-    background-color:gold;
+    border-radius: 20px;
+    background-color:#E9E3CD;
     order: -1;
     padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    }
+
+.menu1{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    line-height: 40px;
+    color: black;
+    border-radius: 10px;
+}
+
+.menu2{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    line-height: 40px;
+    color: black;
+    border-radius: 10px;
+}
+
+
+
+.manu-itens{
+    text-decoration: none;
+    color: black;
+    background-color: #DECCb4;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    border-radius: 10px;
+    
+}
+
+.manu-itens:hover{
+    background-color: #C86673;
+    color: white;
+}
+
+#menu-titulo1{
+    display: flex;
+    text-decoration: none;
+    background-color: #C86673;
+    font-weight: 800;
+    letter-spacing: 2px;
+    padding: 10px;
+    padding-right: 1;
+    color: white;
+    line-height: 50px;
+    border-radius: 10px;
 
 }
+
+
 
 .main{
     margin-top: 10px;
     display: flex;
-    background-color: rgb(138, 94, 94);
-    flex-grow: 1;
+      flex-grow: 4;
     margin-right: 15px;
-    margin-bottom: 15px;
+    
 }
 
 .contents{
     flex-grow: 1;
-    background-color: brown;
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin-right: .5%;
 }
 
 .agenda{
@@ -73,13 +159,17 @@ flex-direction: column;
 }
 
 .footer{
-    background-color:darkgreen;
+    background-color:#DECCb4;
     height: 60px;
-    border-top: 1px solid #DDDFE3;
+    border-top: 5px solid #C86673;
+    border-radius: 20px;
     padding-left: 18px;
     display: flex;
     align-items: center;
     margin-right: 10px;
+    margin-bottom: px;
+    flex-grow: 1;
+    margin-top: 10px;
 }
 
 
